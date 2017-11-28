@@ -31,6 +31,6 @@ for(let i=1; i<=5; i++){
     $("#star"+i).click(function(){changeStarRating(i)});
   }
 
-import {movieData} from './data';  
+import {movieData} from "./data";  
   
 renderMovie(movieData);
