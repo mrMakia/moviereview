@@ -17,7 +17,7 @@
     "styles": "lessc style.less distribution/style.css",
     "bundle": "webpack",
     "copyindex": "cp template.html distribution/index.html",
-    "build": "npm run lintless && npm run bundle && npm run styles && npm run copyindex",
+    "build": "npm run bundle && npm run styles && npm run copyindex",
     "lintless": "stylelint style.less",
     "lintjs": "eslint .",
     "lint": "npm run lintless && npm run lintjs"
