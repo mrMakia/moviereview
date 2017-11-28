@@ -14,13 +14,13 @@
     "webpack": "^3.8.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "styles": "lessc style.less distribution/style.css",
     "bundle": "webpack",
     "copyindex": "cp template.html distribution/index.html",
     "build": "npm run lintless && npm run bundle && npm run styles && npm run copyindex",
     "lintless": "stylelint style.less",
-    "lintjs": "eslint ."
+    "lintjs": "eslint .",
+    "lint": "npm run lintless && npm run lintjs"
   },
   "repository": {
     "type": "git",
