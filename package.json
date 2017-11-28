@@ -1,0 +1,36 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "main": "code.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "react": "^16.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "less": "^2.7.3",
+    "mocha": "^4.0.1",
+    "stylelint": "^8.3.1",
+    "webpack": "^3.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "lessc style.less distribution/style.css",
+    "bundle": "webpack",
+    "copyindex": "cp template.html distribution/index.html",
+    "build": "npm run lintless && npm run bundle && npm run styles && npm run copyindex",
+    "lintless": "stylelint style.less",
+    "lintjs": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrMakia/moviereview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrMakia/moviereview/issues"
+  },
+  "homepage": "https://github.com/mrMakia/moviereview#readme",
+  "description": ""
+}
