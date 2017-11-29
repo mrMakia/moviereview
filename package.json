@@ -18,10 +18,10 @@
     "bundle": "webpack",
     "copyindex": "cp template.html distribution/index.html",
     "build": "npm run bundle && npm run styles && npm run copyindex",
-    "lintless": "stylelint style.less",
-    "lintjs": "eslint .",
-    "lint": "npm run lintless && npm run lintjs"
+    "lintts": "tslint -c tslint.json '*.ts'"
+   
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrMakia/moviereview.git"

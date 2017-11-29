@@ -1,4 +1,5 @@
-let $ = require ("jquery")
+import {movieData} from "./data";
+import * as $ from "jquery";
 
 function renderMovie(movie){
   $("#title").text(movie.title);
@@ -31,6 +32,6 @@ for(let i=1; i<=5; i++){
     $("#star"+i).click(function(){changeStarRating(i)});
   }
 
-import {movieData} from "./data";  
+  
   
 renderMovie(movieData);
